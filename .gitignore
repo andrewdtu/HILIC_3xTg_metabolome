@@ -3,3 +3,5 @@ annotation/db/
 .RData
 .Rproj.user/
 *.docx
+annotation/chebi_id_map_expanded.csv
+results/database_coverage.csv

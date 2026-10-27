@@ -1,5 +1,5 @@
 # Pew · serif headline — Simcox Lab house ggplot2 theme (locked 2026-08-12).
-# See /root/style/REPORT_STANDARDS.md Part E. Companion to pew_serif.mplstyle.
+# Lab house theme (Libre Franklin body, Source Serif 4 headlines).
 #
 # Fonts: register the house fonts once per session (they live in ~/.fonts):
 #   library(systemfonts)            # or library(showtext); showtext_auto()
