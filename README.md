@@ -63,3 +63,6 @@ To rebuild `pathway_sets_all_dbs.rds`, put these downloads in `annotation/db/`, 
 - ChEBI `relation.tsv.gz` (EBI ChEBI flat files)
 - `kegg2chebi.tsv` (`https://rest.kegg.jp/conv/chebi/compound`)
 - SMPDB per-pathway metabolite CSVs, unzipped into `annotation/db/smpdb/` (smpdb.ca/downloads, "Metabolite names linked to SMPDB pathways")
+
+## License
+Code is released under the MIT License (see `LICENSE`).
