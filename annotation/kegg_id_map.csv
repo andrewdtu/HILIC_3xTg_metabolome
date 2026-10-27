@@ -1,0 +1,93 @@
+Metabolite,KEGG
+(S)-Adenosylhomocysteine (SAH),C00021
+2-Aminoadipic acid,C00956
+2-Deoxycytidine (dCYD),C00881
+2-Methylbutanal,C02223
+3-(R)-Hydroxyisobutyric acid,C01188;C06001
+3-Carboxypropyl trimethylammonium,C01181
+3-Hydroxy-3-methylglutaric acid,C03761
+3-Hydroxybutyric acid,C01089
+3-Ureidopropionic acid,C02642
+5-Aminolevulinic acid,C00430
+5-Deoxy-5-(methylthio)adenosine,C00170
+5-Methyluridine,
+Acetylcarnitine,C02571
+Acetylleucine,C02710
+Adenine,C00147
+Adenosine,C00212
+Adenosine 5-monophosphate (AMP),C00020
+Adenylosuccinic acid,C03794
+Adipic acid,C06104
+ADP-ribose,C00301
+Alanine,C00041
+Allantoin,C01551;C02350
+Anserine,C01262
+Arginine,C00062
+Asparagine,C00152
+Aspartic acid,C00049
+Carnosine,C00386
+CDP-ethanolamine,C00570
+Choline,C00114
+Aconitic acid,C00417
+Citrulline,C00327
+Creatine,C00300
+Creatinine,C00791
+Cytidine,C00475
+Cytidine diphosphate choline (CDPcholine),C00307
+Cytosine,C00380
+Dulcitol,C01697
+Ethanolamine,C00189
+Flavin adenine dinucleotide (FAD),C00016
+Fructose,C00095
+gamma-Aminobutyric acid (GABA),C00334
+Glucose 6-phosphate,C00092;C00668
+Glutamic acid,C00025
+Glutamine,C00064
+Glutarylcarnitine,
+"Glutathione (oxidized, GSSG)",C00127
+Glycerophosphocholine,C00670
+Guanidinosuccinic acid,C03139
+Guanosine,C00387
+Guanosine 5-monophosphate,C00144
+Hydroxyglutaric acid,C02630;C03196;C01087
+Hypoxanthine,C00262
+Inosine,C00294
+Inosine 5-diphosphate (IDP),C00104
+Inosine 5-monophosphate (IMP),C00130
+Isoleucine,C00407
+Leucine,C00123
+Malonic acid,C00383
+Methionine,C00073
+"N,N-Dimethylglycine",C01026
+N-Acetylalanine,
+N-Acetylaspartic acid,C01042
+N-Acetylglutamic acid,C00624
+N-Acetylserine,
+N-Carbamoylaspartic acid,C00438
+Nicotinamide,C00153
+Nicotinamide adenine dinucleotide (NAD),C00003
+Nicotinic acid,C00253
+Orotic Acid,C00295
+Pantothenic acid,C00864
+Phenylalanine,C00079
+Phosphocholine,C00588
+Pipecolic acid,C00408
+Proline,C00148
+Pyruvic acid,C00022
+Serine,C00065
+Succinic acid,C00042
+Taurine,C00245
+Taurocholic acid,C05122
+Thiamine,C00378
+Threonine,C00188
+Thymidine,C00214
+trans-4-Hydroxyproline,C01157
+Tryptophan,C00078
+Uracil,C00106
+Urea,C00086
+Uridine,C00299
+Uridine 5-diphosphate (UDP),C00015
+Uridine 5-monophosphate (UMP),C00105
+Uridine-5-diphosphoglucose,C00029
+Urocanic acid,C00785
+Xanthosine 5-monophosphate,C00655
