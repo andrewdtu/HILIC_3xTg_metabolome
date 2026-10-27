@@ -39,12 +39,15 @@ From the repository root:
 - **Pathway enrichment (Figure 6C).**
   - Directional over-representation analysis: a one-sided hypergeometric test on metabolites with p < 0.05, run separately for increased and decreased metabolites.
   - Databases: KEGG (mouse), Reactome (mouse, lowest level), SMPDB (metabolic) and RefMet classes.
-  - Background: the measured metabolites annotated in each resource. Only sets with ≥ 3 measured members are tested.
+  - Background: the measured metabolites annotated in each resource. Only sets with ≥ 3 measured members are tested, and sets with identical measured members are collapsed to one before BH correction.
+  - Figure 6C shows, for each set, the smaller of the up and down p-values (with that direction's FDR). Rows are sets with p < 0.05 in any of seven comparisons (all mice, each sex × age, genotype × age per sex); only the three female columns are drawn.
 - **Symbols:** `*` FDR < 0.05, `#` nominal p < 0.05.
 - **Figure 6E.** The lysine degradation scheme is adapted from Tan, Chrysopoulou & Rinschen, *Physiol Genomics* 2023;55:579.
 
 ## Software
-R 4.5.0 with limma 3.64.3, dplyr 1.2.0, tidyr 1.3.2, ggplot2 4.0.2, patchwork 1.3.2, ragg 1.5.2 and scales 1.4.0.
+R 4.5.0 with limma 3.64.3, dplyr 1.2.0, tidyr 1.3.2, tibble 3.3.1, ggplot2 4.0.2, patchwork 1.3.2, ragg 1.5.2 and scales 1.4.0.
+Full session information is written to `results/sessionInfo.txt` by `run_all.sh`. Install with
+`install.packages(c("BiocManager", "dplyr", "tidyr", "tibble", "ggplot2", "patchwork", "ragg", "scales")); BiocManager::install("limma")`.
 The figure uses the Libre Franklin and Source Serif 4 fonts (Google Fonts), which must be installed system-wide.
 
 ## Annotation files (`annotation/`)
@@ -52,6 +55,8 @@ The figure uses the Libre Franklin and Source Serif 4 fonts (Google Fonts), whic
 - `refmet_classes.csv` — RefMet main and sub classes.
 - `kegg_mmu_pathway_compounds.rds` — cached KEGG REST pathway–compound links (mouse).
 - `pathway_sets_all_dbs.rds` — the metabolite sets used by `03_enrichment.R`.
+
+KEGG uses mouse pathways and Reactome uses mouse annotations; SMPDB pathways are human. All annotation sources were downloaded on 2026-10-12.
 
 To rebuild `pathway_sets_all_dbs.rds`, put these downloads in `annotation/db/`, which is not version-controlled:
 - Reactome `ChEBI2Reactome.txt` and `ChEBI2Reactome_All_Levels.txt` (reactome.org/download-data)

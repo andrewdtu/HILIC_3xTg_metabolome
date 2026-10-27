@@ -11,8 +11,8 @@ NORM <- if (length(commandArgs(TRUE))) commandArgs(TRUE)[1] else "pqn"
 r <- readRDS(sprintf("results/%s/fit.rds", NORM)); Y <- r$Y; design <- r$fit$design; cons <- r$fit$contrasts
 out <- list()
 for (d in names(sets)) {
-  S <- sets[[d]] %>% filter(Metabolite %in% rownames(Y)) %>% group_by(id, name) %>% summarise(members = list(unique(Metabolite)), n = length(unique(Metabolite)), .groups = "drop") %>%
-    filter(n >= 3) %>% distinct(members, .keep_all = TRUE)  # drop pathways with identical measured members (common in SMPDB)
+  S <- sets[[d]] %>% filter(Metabolite %in% rownames(Y)) %>% group_by(id, name) %>% summarise(members = list(sort(unique(Metabolite))), n = length(unique(Metabolite)), .groups = "drop") %>%
+    filter(n >= 3) %>% distinct(members, .keep_all = TRUE)  # drop sets with identical measured members (sorted, so order does not matter; common in SMPDB)
   bg <- unique(sets[[d]]$Metabolite); Yd <- Y[bg, ]  # background = measured metabolites annotated in this resource
   idx <- setNames(lapply(S$members, function(m) match(m, rownames(Yd))), S$id)
   for (k in colnames(cons)) {

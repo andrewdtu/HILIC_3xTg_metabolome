@@ -59,7 +59,7 @@ terms <- colnames(dsg2)[-1]
 omni <- sapply(terms, function(t) fit2$p.value[, t])
 omni_fdr <- apply(omni, 2, p.adjust, "BH")
 colnames(omni) <- paste0("p_", colnames(omni)); colnames(omni_fdr) <- paste0("fdr_", colnames(omni_fdr))
-write.csv(cbind(Metabolite = rownames(Y), omni, omni_fdr), file.path(OUT, "factorial_terms_pvals.csv"), row.names = FALSE)
+write.csv(data.frame(Metabolite = rownames(Y), omni, omni_fdr, check.names = FALSE), file.path(OUT, "factorial_terms_pvals.csv"), row.names = FALSE)
 
 cat("\n# metabolites p<0.05 / FDR<0.1 per contrast\n")
 print(res %>% group_by(contrast) %>% summarise(p05 = sum(P.Value < .05), up = sum(P.Value < .05 & logFC > 0),
