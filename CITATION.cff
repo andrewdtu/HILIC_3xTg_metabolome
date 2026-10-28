@@ -8,13 +8,13 @@ abstract: >-
   protein + PQN limma analysis of 92 HILIC-MS metabolites in 3xTg-AD vs C57BL/6J mouse hippocampus
   (genotype x sex x age), pathway enrichment, and the composite figure.
 authors:
-  - family-names: Tu
-    given-names: Andrew
-    orcid: "https://orcid.org/0009-0006-4958-8986"
-    affiliation: "University of Wisconsin–Madison"
   - family-names: Mill
     given-names: Jericha
     orcid: "https://orcid.org/0000-0003-1434-5459"
+    affiliation: "University of Wisconsin–Madison"
+  - family-names: Tu
+    given-names: Andrew
+    orcid: "https://orcid.org/0009-0006-4958-8986"
     affiliation: "University of Wisconsin–Madison"
 version: 1.0.0
 date-released: "2026-10-28"
