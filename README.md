@@ -2,7 +2,7 @@
 
 Simcox Lab. Analysis code for the 3xTg-AD hippocampal metabolomics figure (Figure 6) in
 Mill *et al.*, "A framework for robust targeted metabolomic profiling using chromatographic
-reproducibility and rational internal standards" (JASMS).
+reproducibility and rational internal standards".
 
 This repository holds only the code used in the paper: the BCA-protein-normalized data, protein + PQN
 normalization, limma, pathway enrichment and Figure 6.
@@ -27,7 +27,7 @@ From the repository root:
 | 4 | `R/04_figure6.R` | `figures/figure6.png`, `figures/figure6.pdf` |
 
 ## Methods
-- **Input.** Each metabolite is in ng per µg BCA protein, from `data/JASMS metaboanalyst RUN 1 MAIN + run 2.csv`.
+- **Input.** Each metabolite is in ng per µg BCA protein, from `data/3xTg_hippocampus_metabolites_protein_normalized.csv`.
 - **Normalization.**
   - Zeros (9 of 3,496 values) are replaced by half of that metabolite's minimum positive value.
   - Probabilistic quotient normalization (PQN; Dieterle *et al.*, *Anal Chem* 2006) is then applied. The reference is the per-metabolite median across all samples, and each sample is divided by the median of its ratios to that reference.

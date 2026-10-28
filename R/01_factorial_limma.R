@@ -4,7 +4,7 @@ suppressPackageStartupMessages({library(limma); library(dplyr); library(tidyr)})
 args <- commandArgs(TRUE); NORM <- if (length(args)) args[1] else "none"  # "none" (BCA protein, as supplied) or "pqn" (protein + PQN)
 stopifnot(NORM %in% c("none", "pqn"))
 cat("Normalization:", NORM, "\n")
-d <- read.csv("data/JASMS metaboanalyst RUN 1 MAIN + run 2.csv", check.names = FALSE)
+d <- read.csv("data/3xTg_hippocampus_metabolites_protein_normalized.csv", check.names = FALSE)
 names(d)[1] <- "Sample"
 meta <- d[, 1:2]
 meta$Genotype <- factor(ifelse(grepl("3xTg", meta$Sample), "Tg", "WT"), levels = c("WT", "Tg"))
